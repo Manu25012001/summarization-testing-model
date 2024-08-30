@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Summarization</title>
+</head>
+<body>
+    <h1>Summarize Text</h1>
+    <form action="{{ url_for('predict') }}" method="POST">
+        <div>
+            <label for="text_input">Input Text:</label>
+            <textarea id="text_input" name="text_input" rows="10" cols="50"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Summarize">
+        </div>
+    </form>
+
+    {% if prediction_text %}
+        <h2>{{ prediction_text }}</h2>
+    {% endif %}
+</body>
+</html>

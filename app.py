@@ -5,7 +5,7 @@ import torch
 import os
 
 # Log in to Hugging Face Hub
-os.environ["HUGGINGFACE_HUB_TOKEN"] = "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"
+os.environ["HUGGINGFACE_HUB_TOKEN"] = "hf_wDYXSBIbPpqeMGmyivKfoRCIsegddxf"
 
 # Load the tokenizer and model from Hugging Face
 tokenizer = AutoTokenizer.from_pretrained("stevhliu/my_awesome_billsum_model")
